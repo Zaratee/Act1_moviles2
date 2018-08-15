@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etxt_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Numero 1"
+        android:layout_marginTop="80dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/etxt_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Numero 2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_num1"
+        android:layout_marginTop="30dp"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btn_operacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_num2"
+        android:layout_marginTop="100dp"
+        android:text="Operacion" />
+    <TextView
+        android:id="@+id/txtV_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_operacion"
+        android:text="hola"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/txtV_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtV_tipo"
+        android:textSize="50dp"
+        android:layout_marginTop="25dp"/>
+</RelativeLayout>
